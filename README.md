@@ -1,24 +1,12 @@
-# README
+# Chore board app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Quick app to learn how to use Rails
 
-Things you may want to cover:
+## Running locally
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Build images for rails and postgresql
+   `docker-compose build`
+2. Run the containers
+   `docker-compose up`
+3. If you get a database error - run the command to create database
+   `docker-compose run web bin/rails db:prepare`
