@@ -15,3 +15,13 @@ Quick app to learn how to use Rails
 3. If you get a database error - run the command to create database
 
    `docker-compose run web bin/rails db:prepare`
+
+## Working with the database
+
+Default case - will run migrations and then hydrate with seed data
+
+`docker-compose run --rm web bin/setup-dev.sh`
+
+This will reconstruct the db and hydrate db with seed data
+
+`docker-compose run --rm web bin/setup-dev.sh --reset`

@@ -7,3 +7,24 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Chore.create!(
+  [
+    {
+      name: "Take out trash",
+      description: "Take out trash",
+      schedule: {
+        type: "weekly",
+        day: "monday",
+      }
+    },
+    {
+      name: "Wash dishes",
+      description: "Wash dishes",
+      schedule: {
+        type: "daily",
+        time: "19:00",
+      }
+    }
+  ]
+)
