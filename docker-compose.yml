@@ -9,10 +9,12 @@ services:
     ports:
       - "5432:5432"
 
-  web:
-    build: .
+  api:
+    build: 
+      context: ./api
     volumes:
-      - .:/chore-board
+      - ./api:/app
+    working_dir: /app
     ports:
       - "3000:3000"
     depends_on:

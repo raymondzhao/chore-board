@@ -5,7 +5,8 @@ RUN apt-get update -qq && \
     apt-get install -y build-essential libpq-dev nodejs postgresql-client
 
 # Set working directory
-WORKDIR /chore-board
+# chore-board/api
+WORKDIR /api
 
 # Pre-copy Gemfiles to cache bundle layer
 COPY Gemfile Gemfile.lock ./
